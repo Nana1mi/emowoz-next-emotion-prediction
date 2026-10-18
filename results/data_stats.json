@@ -1,0 +1,73 @@
+{
+  "labels": [
+    "neutral",
+    "fearful",
+    "dissatisfied",
+    "apologetic",
+    "abusive",
+    "excited",
+    "satisfied"
+  ],
+  "history_turns": 6,
+  "max_dialogues_per_split": 0,
+  "data_seed": 2026,
+  "source": "https://zenodo.org/records/6506504/files/",
+  "source_sha256": {
+    "emowoz-multiwoz.json": "b1805796d10b260ce6d5a18d9259dea7ea2ce58bf8516fa53ec00349e8e0ec58",
+    "emowoz-dialmage.json": "1035f0cf408a513192a08e7e830d2aac50dc74e13c424830b6cd986328a75160",
+    "data-split.json": "15a4060a7dd005585af4f64905392724e61d921e74404cc5074fca4069c05c91"
+  },
+  "splits": {
+    "train": {
+      "dialogues": 9233,
+      "samples": 57240,
+      "class_counts": {
+        "neutral": 37927,
+        "fearful": 155,
+        "dissatisfied": 4045,
+        "apologetic": 681,
+        "abusive": 68,
+        "excited": 475,
+        "satisfied": 13889
+      },
+      "domain_counts": {
+        "multiwoz": 48340,
+        "dialmage": 8900
+      }
+    },
+    "validation": {
+      "dialogues": 1100,
+      "samples": 7409,
+      "class_counts": {
+        "neutral": 4926,
+        "fearful": 16,
+        "dissatisfied": 467,
+        "apologetic": 84,
+        "abusive": 19,
+        "excited": 76,
+        "satisfied": 1821
+      },
+      "domain_counts": {
+        "multiwoz": 6374,
+        "dialmage": 1035
+      }
+    },
+    "test": {
+      "dialogues": 1100,
+      "samples": 7534,
+      "class_counts": {
+        "neutral": 4950,
+        "fearful": 16,
+        "dissatisfied": 604,
+        "apologetic": 73,
+        "abusive": 17,
+        "excited": 57,
+        "satisfied": 1817
+      },
+      "domain_counts": {
+        "multiwoz": 6372,
+        "dialmage": 1162
+      }
+    }
+  }
+}

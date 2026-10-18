@@ -1,0 +1,136 @@
+[
+  {
+    "model": "minilm_full_ce_reference",
+    "validation_macro_f1_mean": 0.32225530509534034,
+    "validation_macro_f1_std": 0.010367285002057025,
+    "test_macro_f1_mean": 0.31943145989181354,
+    "test_macro_f1_std": 0.00509240169622369,
+    "test_accuracy_mean": 0.7246703831519334,
+    "test_negative_f1_mean": 0.6089192492316656,
+    "test_per_class": {
+      "neutral": {
+        "precision_mean": 0.8350978244528036,
+        "recall_mean": 0.7552188552188551,
+        "f1_mean": 0.7926215788771417,
+        "true_count_mean": 4950.0,
+        "pred_count_mean": 4479.0,
+        "tp_count_mean": 3738.3333333333335
+      },
+      "fearful": {
+        "precision_mean": 0.02889204994468152,
+        "recall_mean": 0.0625,
+        "f1_mean": 0.03941704898773534,
+        "true_count_mean": 16.0,
+        "pred_count_mean": 35.0,
+        "tp_count_mean": 1.0
+      },
+      "dissatisfied": {
+        "precision_mean": 0.5652736926875694,
+        "recall_mean": 0.6749448123620309,
+        "f1_mean": 0.6124472627801186,
+        "true_count_mean": 604.0,
+        "pred_count_mean": 728.3333333333334,
+        "tp_count_mean": 407.6666666666667
+      },
+      "apologetic": {
+        "precision_mean": 0.12378079436902967,
+        "recall_mean": 0.045662100456621,
+        "f1_mean": 0.0649291108028972,
+        "true_count_mean": 73.0,
+        "pred_count_mean": 28.666666666666668,
+        "tp_count_mean": 3.3333333333333335
+      },
+      "abusive": {
+        "precision_mean": 0.0,
+        "recall_mean": 0.0,
+        "f1_mean": 0.0,
+        "true_count_mean": 17.0,
+        "pred_count_mean": 1.0,
+        "tp_count_mean": 0.0
+      },
+      "excited": {
+        "precision_mean": 0.061696682023360795,
+        "recall_mean": 0.0935672514619883,
+        "f1_mean": 0.07166823635526276,
+        "true_count_mean": 57.0,
+        "pred_count_mean": 97.33333333333333,
+        "tp_count_mean": 5.333333333333333
+      },
+      "satisfied": {
+        "precision_mean": 0.6028015258908971,
+        "recall_mean": 0.7176664832140892,
+        "f1_mean": 0.6549369814395392,
+        "true_count_mean": 1817.0,
+        "pred_count_mean": 2164.6666666666665,
+        "tp_count_mean": 1304.0
+      }
+    }
+  },
+  {
+    "model": "minilm_full_kd_0p3",
+    "validation_macro_f1_mean": 0.32233712813894494,
+    "validation_macro_f1_std": 0.006652834818406039,
+    "test_macro_f1_mean": 0.31712841168802286,
+    "test_macro_f1_std": 0.0038086563898017704,
+    "test_accuracy_mean": 0.7302893549243431,
+    "test_negative_f1_mean": 0.6075594450770271,
+    "test_per_class": {
+      "neutral": {
+        "precision_mean": 0.8389381561681614,
+        "recall_mean": 0.7593939393939394,
+        "f1_mean": 0.7970756852133046,
+        "true_count_mean": 4950.0,
+        "pred_count_mean": 4481.0,
+        "tp_count_mean": 3759.0
+      },
+      "fearful": {
+        "precision_mean": 0.031529581529581525,
+        "recall_mean": 0.0625,
+        "f1_mean": 0.041828852753222505,
+        "true_count_mean": 16.0,
+        "pred_count_mean": 32.0,
+        "tp_count_mean": 1.0
+      },
+      "dissatisfied": {
+        "precision_mean": 0.5447754815840691,
+        "recall_mean": 0.6909492273730685,
+        "f1_mean": 0.609145742521589,
+        "true_count_mean": 604.0,
+        "pred_count_mean": 766.3333333333334,
+        "tp_count_mean": 417.3333333333333
+      },
+      "apologetic": {
+        "precision_mean": 0.12492492492492491,
+        "recall_mean": 0.0319634703196347,
+        "f1_mean": 0.0470181603705491,
+        "true_count_mean": 73.0,
+        "pred_count_mean": 21.0,
+        "tp_count_mean": 2.3333333333333335
+      },
+      "abusive": {
+        "precision_mean": 0.0,
+        "recall_mean": 0.0,
+        "f1_mean": 0.0,
+        "true_count_mean": 17.0,
+        "pred_count_mean": 0.0,
+        "tp_count_mean": 0.0
+      },
+      "excited": {
+        "precision_mean": 0.0843708734201094,
+        "recall_mean": 0.06432748538011696,
+        "f1_mean": 0.0657159026598755,
+        "true_count_mean": 57.0,
+        "pred_count_mean": 49.333333333333336,
+        "tp_count_mean": 3.6666666666666665
+      },
+      "satisfied": {
+        "precision_mean": 0.6040283049987437,
+        "recall_mean": 0.7257383966244726,
+        "f1_mean": 0.6591145382976193,
+        "true_count_mean": 1817.0,
+        "pred_count_mean": 2184.3333333333335,
+        "tp_count_mean": 1318.6666666666667
+      }
+    }
+  }
+]

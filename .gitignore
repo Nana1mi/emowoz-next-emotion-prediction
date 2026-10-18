@@ -1,0 +1,34 @@
+# Local data, model weights and experiment outputs are not public artifacts.
+/data/
+/runs/
+/统计稳健性审计*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.conda/
+*.pt
+*.pth
+*.safetensors
+*.npz
+*.jsonl
+*.download
+*.log
+*.tmp
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+# Course submissions contain personal identifiers; keep them local.
+*.docx
+*.pdf
+*.zip
+*.aux
+*.out
+*.synctex.gz

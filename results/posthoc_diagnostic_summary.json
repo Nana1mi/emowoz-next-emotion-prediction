@@ -1,0 +1,1642 @@
+[
+  {
+    "model": "predictive_history_ce",
+    "runs": 3,
+    "uses_future_text": false,
+    "scores": {
+      "train": {
+        "accuracy_mean": 0.6885744234800839,
+        "accuracy_std": 0.0063704103855884925,
+        "macro_f1_mean": 0.31223271898142646,
+        "macro_f1_std": 0.03463346936545167,
+        "weighted_f1_mean": 0.6841645993160604,
+        "weighted_f1_std": 0.0045976053861390975,
+        "per_class": {
+          "neutral": {
+            "f1_mean": 0.7772984353591146,
+            "precision_mean": 0.7740487122115575,
+            "recall_mean": 0.7808948770005536,
+            "pred_count_mean": 38270.333333333336,
+            "tp_count_mean": 29617.0,
+            "true_count_mean": 37927.0
+          },
+          "fearful": {
+            "f1_mean": 0.10907391377090442,
+            "precision_mean": 0.15498542880045932,
+            "recall_mean": 0.1118279569892473,
+            "pred_count_mean": 131.33333333333334,
+            "tp_count_mean": 17.333333333333332,
+            "true_count_mean": 155.0
+          },
+          "dissatisfied": {
+            "f1_mean": 0.5053801292015325,
+            "precision_mean": 0.446082031842421,
+            "recall_mean": 0.5849196538936959,
+            "pred_count_mean": 5320.0,
+            "tp_count_mean": 2366.0,
+            "true_count_mean": 4045.0
+          },
+          "apologetic": {
+            "f1_mean": 0.02338502994888918,
+            "precision_mean": 0.06703990812517945,
+            "recall_mean": 0.014194811551639744,
+            "pred_count_mean": 97.0,
+            "tp_count_mean": 9.666666666666666,
+            "true_count_mean": 681.0
+          },
+          "abusive": {
+            "f1_mean": 0.16693191865605658,
+            "precision_mean": 0.18305504019789734,
+            "recall_mean": 0.1568627450980392,
+            "pred_count_mean": 42.0,
+            "tp_count_mean": 10.666666666666666,
+            "true_count_mean": 68.0
+          },
+          "excited": {
+            "f1_mean": 0.05891614096783524,
+            "precision_mean": 0.10714277845605798,
+            "recall_mean": 0.04491228070175438,
+            "pred_count_mean": 219.33333333333334,
+            "tp_count_mean": 21.333333333333332,
+            "true_count_mean": 475.0
+          },
+          "satisfied": {
+            "f1_mean": 0.5446434649656526,
+            "precision_mean": 0.56086592851892,
+            "recall_mean": 0.53077975376197,
+            "pred_count_mean": 13160.0,
+            "tp_count_mean": 7372.0,
+            "true_count_mean": 13889.0
+          }
+        }
+      },
+      "validation": {
+        "accuracy_mean": 0.6873172267962389,
+        "accuracy_std": 0.007867006071676595,
+        "macro_f1_mean": 0.27381095451574716,
+        "macro_f1_std": 0.006366700272517261,
+        "weighted_f1_mean": 0.6818203813155654,
+        "weighted_f1_std": 0.0061637722761266,
+        "per_class": {
+          "neutral": {
+            "f1_mean": 0.7773408130175112,
+            "precision_mean": 0.7736451813880594,
+            "recall_mean": 0.7814318581675463,
+            "pred_count_mean": 4976.666666666667,
+            "tp_count_mean": 3849.3333333333335,
+            "true_count_mean": 4926.0
+          },
+          "fearful": {
+            "f1_mean": 0.0,
+            "precision_mean": 0.0,
+            "recall_mean": 0.0,
+            "pred_count_mean": 5.666666666666667,
+            "tp_count_mean": 0.0,
+            "true_count_mean": 16.0
+          },
+          "dissatisfied": {
+            "f1_mean": 0.5119194475786074,
+            "precision_mean": 0.449153861334532,
+            "recall_mean": 0.596716630977873,
+            "pred_count_mean": 621.6666666666666,
+            "tp_count_mean": 278.6666666666667,
+            "true_count_mean": 467.0
+          },
+          "apologetic": {
+            "f1_mean": 0.030318202047174007,
+            "precision_mean": 0.06469979296066253,
+            "recall_mean": 0.01984126984126984,
+            "pred_count_mean": 17.0,
+            "tp_count_mean": 1.6666666666666667,
+            "true_count_mean": 84.0
+          },
+          "abusive": {
+            "f1_mean": 0.0,
+            "precision_mean": 0.0,
+            "recall_mean": 0.0,
+            "pred_count_mean": 3.6666666666666665,
+            "tp_count_mean": 0.0,
+            "true_count_mean": 19.0
+          },
+          "excited": {
+            "f1_mean": 0.06103301288664794,
+            "precision_mean": 0.1320036060401172,
+            "recall_mean": 0.043859649122807015,
+            "pred_count_mean": 30.0,
+            "tp_count_mean": 3.3333333333333335,
+            "true_count_mean": 76.0
+          },
+          "satisfied": {
+            "f1_mean": 0.5360652060802895,
+            "precision_mean": 0.5471534295602839,
+            "recall_mean": 0.5268167673439502,
+            "pred_count_mean": 1754.3333333333333,
+            "tp_count_mean": 959.3333333333334,
+            "true_count_mean": 1821.0
+          }
+        }
+      },
+      "test": {
+        "accuracy_mean": 0.6916202106008318,
+        "accuracy_std": 0.0032629668290403272,
+        "macro_f1_mean": 0.27030520922700224,
+        "macro_f1_std": 0.004983916808615018,
+        "weighted_f1_mean": 0.6846817282192799,
+        "weighted_f1_std": 0.0035981383549294893,
+        "per_class": {
+          "neutral": {
+            "f1_mean": 0.7821606451025037,
+            "precision_mean": 0.7696053486391331,
+            "recall_mean": 0.7954882154882155,
+            "pred_count_mean": 5118.0,
+            "tp_count_mean": 3937.6666666666665,
+            "true_count_mean": 4950.0
+          },
+          "fearful": {
+            "f1_mean": 0.0,
+            "precision_mean": 0.0,
+            "recall_mean": 0.0,
+            "pred_count_mean": 9.333333333333334,
+            "tp_count_mean": 0.0,
+            "true_count_mean": 16.0
+          },
+          "dissatisfied": {
+            "f1_mean": 0.5477973143292815,
+            "precision_mean": 0.5345053684675215,
+            "recall_mean": 0.5629139072847682,
+            "pred_count_mean": 637.3333333333334,
+            "tp_count_mean": 340.0,
+            "true_count_mean": 604.0
+          },
+          "apologetic": {
+            "f1_mean": 0.0,
+            "precision_mean": 0.0,
+            "recall_mean": 0.0,
+            "pred_count_mean": 10.666666666666666,
+            "tp_count_mean": 0.0,
+            "true_count_mean": 73.0
+          },
+          "abusive": {
+            "f1_mean": 0.0,
+            "precision_mean": 0.0,
+            "recall_mean": 0.0,
+            "pred_count_mean": 4.666666666666667,
+            "tp_count_mean": 0.0,
+            "true_count_mean": 17.0
+          },
+          "excited": {
+            "f1_mean": 0.037301690101655564,
+            "precision_mean": 0.0657298006922067,
+            "recall_mean": 0.029239766081871343,
+            "pred_count_mean": 26.666666666666668,
+            "tp_count_mean": 1.6666666666666667,
+            "true_count_mean": 57.0
+          },
+          "satisfied": {
+            "f1_mean": 0.524876815055575,
+            "precision_mean": 0.5396138169580572,
+            "recall_mean": 0.5125665015593469,
+            "pred_count_mean": 1727.3333333333333,
+            "tp_count_mean": 931.3333333333334,
+            "true_count_mean": 1817.0
+          }
+        }
+      }
+    }
+  },
+  {
+    "model": "predictive_history_focal",
+    "runs": 3,
+    "uses_future_text": false,
+    "scores": {
+      "train": {
+        "accuracy_mean": 0.6800780340088517,
+        "accuracy_std": 0.013264461068821629,
+        "macro_f1_mean": 0.320376883915441,
+        "macro_f1_std": 0.013605562582149887,
+        "weighted_f1_mean": 0.6784203427796921,
+        "weighted_f1_std": 0.005269293355286598,
+        "per_class": {
+          "neutral": {
+            "f1_mean": 0.7703207565821923,
+            "precision_mean": 0.7694454785566989,
+            "recall_mean": 0.7725982369639922,
+            "pred_count_mean": 38113.666666666664,
+            "tp_count_mean": 29302.333333333332,
+            "true_count_mean": 37927.0
+          },
+          "fearful": {
+            "f1_mean": 0.12354089826009229,
+            "precision_mean": 0.0932023813367411,
+            "recall_mean": 0.19354838709677416,
+            "pred_count_mean": 327.6666666666667,
+            "tp_count_mean": 30.0,
+            "true_count_mean": 155.0
+          },
+          "dissatisfied": {
+            "f1_mean": 0.49187785771385695,
+            "precision_mean": 0.4660006165084243,
+            "recall_mean": 0.5217964565306963,
+            "pred_count_mean": 4536.666666666667,
+            "tp_count_mean": 2110.6666666666665,
+            "true_count_mean": 4045.0
+          },
+          "apologetic": {
+            "f1_mean": 0.05086613452318225,
+            "precision_mean": 0.08086245459239964,
+            "recall_mean": 0.04062652961331375,
+            "pred_count_mean": 363.6666666666667,
+            "tp_count_mean": 27.666666666666668,
+            "true_count_mean": 681.0
+          },
+          "abusive": {
+            "f1_mean": 0.18802660417567252,
+            "precision_mean": 0.38041566746602723,
+            "recall_mean": 0.16666666666666666,
+            "pred_count_mean": 59.666666666666664,
+            "tp_count_mean": 11.333333333333334,
+            "true_count_mean": 68.0
+          },
+          "excited": {
+            "f1_mean": 0.07625464304388008,
+            "precision_mean": 0.08803943588662327,
+            "recall_mean": 0.07578947368421053,
+            "pred_count_mean": 443.6666666666667,
+            "tp_count_mean": 36.0,
+            "true_count_mean": 475.0
+          },
+          "satisfied": {
+            "f1_mean": 0.5417512931092107,
+            "precision_mean": 0.5574623409357443,
+            "recall_mean": 0.5334917320661435,
+            "pred_count_mean": 13395.0,
+            "tp_count_mean": 7409.666666666667,
+            "true_count_mean": 13889.0
+          }
+        }
+      },
+      "validation": {
+        "accuracy_mean": 0.6767444999325144,
+        "accuracy_std": 0.020990916812738073,
+        "macro_f1_mean": 0.28398851294929656,
+        "macro_f1_std": 0.0030669518422042964,
+        "weighted_f1_mean": 0.6747933951207425,
+        "weighted_f1_std": 0.011905255302360843,
+        "per_class": {
+          "neutral": {
+            "f1_mean": 0.767505594431103,
+            "precision_mean": 0.7681816754825744,
+            "recall_mean": 0.7685072404926242,
+            "pred_count_mean": 4931.0,
+            "tp_count_mean": 3785.6666666666665,
+            "true_count_mean": 4926.0
+          },
+          "fearful": {
+            "f1_mean": 0.03380746237889095,
+            "precision_mean": 0.029708853238265002,
+            "recall_mean": 0.041666666666666664,
+            "pred_count_mean": 20.0,
+            "tp_count_mean": 0.6666666666666666,
+            "true_count_mean": 16.0
+          },
+          "dissatisfied": {
+            "f1_mean": 0.49725039636733387,
+            "precision_mean": 0.4639538419402915,
+            "recall_mean": 0.5360456816559601,
+            "pred_count_mean": 539.6666666666666,
+            "tp_count_mean": 250.33333333333334,
+            "true_count_mean": 467.0
+          },
+          "apologetic": {
+            "f1_mean": 0.06177260862889605,
+            "precision_mean": 0.08374550834918622,
+            "recall_mean": 0.05555555555555555,
+            "pred_count_mean": 59.666666666666664,
+            "tp_count_mean": 4.666666666666667,
+            "true_count_mean": 84.0
+          },
+          "abusive": {
+            "f1_mean": 0.016666666666666666,
+            "precision_mean": 0.015873015873015872,
+            "recall_mean": 0.017543859649122806,
+            "pred_count_mean": 8.666666666666666,
+            "tp_count_mean": 0.3333333333333333,
+            "true_count_mean": 19.0
+          },
+          "excited": {
+            "f1_mean": 0.07560476792360088,
+            "precision_mean": 0.10278388278388279,
+            "recall_mean": 0.07017543859649122,
+            "pred_count_mean": 63.0,
+            "tp_count_mean": 5.333333333333333,
+            "true_count_mean": 76.0
+          },
+          "satisfied": {
+            "f1_mean": 0.535312094248585,
+            "precision_mean": 0.5469083792212649,
+            "recall_mean": 0.5310269082921472,
+            "pred_count_mean": 1787.0,
+            "tp_count_mean": 967.0,
+            "true_count_mean": 1821.0
+          }
+        }
+      },
+      "test": {
+        "accuracy_mean": 0.6813998761171578,
+        "accuracy_std": 0.016987745723638478,
+        "macro_f1_mean": 0.2748830059127296,
+        "macro_f1_std": 0.00531798143264549,
+        "weighted_f1_mean": 0.6778589811318348,
+        "weighted_f1_std": 0.008648406831066983,
+        "per_class": {
+          "neutral": {
+            "f1_mean": 0.7733680950863221,
+            "precision_mean": 0.76477071341091,
+            "recall_mean": 0.7835016835016835,
+            "pred_count_mean": 5074.0,
+            "tp_count_mean": 3878.3333333333335,
+            "true_count_mean": 4950.0
+          },
+          "fearful": {
+            "f1_mean": 0.0,
+            "precision_mean": 0.0,
+            "recall_mean": 0.0,
+            "pred_count_mean": 27.0,
+            "tp_count_mean": 0.0,
+            "true_count_mean": 16.0
+          },
+          "dissatisfied": {
+            "f1_mean": 0.5317065130065582,
+            "precision_mean": 0.5502675505408566,
+            "recall_mean": 0.5149006622516556,
+            "pred_count_mean": 565.3333333333334,
+            "tp_count_mean": 311.0,
+            "true_count_mean": 604.0
+          },
+          "apologetic": {
+            "f1_mean": 0.0484802778920426,
+            "precision_mean": 0.07357022499752204,
+            "recall_mean": 0.0410958904109589,
+            "pred_count_mean": 42.666666666666664,
+            "tp_count_mean": 3.0,
+            "true_count_mean": 73.0
+          },
+          "abusive": {
+            "f1_mean": 0.0,
+            "precision_mean": 0.0,
+            "recall_mean": 0.0,
+            "pred_count_mean": 8.0,
+            "tp_count_mean": 0.0,
+            "true_count_mean": 17.0
+          },
+          "excited": {
+            "f1_mean": 0.04698865076223566,
+            "precision_mean": 0.059097178390256445,
+            "recall_mean": 0.04678362573099415,
+            "pred_count_mean": 55.666666666666664,
+            "tp_count_mean": 2.6666666666666665,
+            "true_count_mean": 57.0
+          },
+          "satisfied": {
+            "f1_mean": 0.5236375046419486,
+            "precision_mean": 0.537953596654853,
+            "recall_mean": 0.5166024582645387,
+            "pred_count_mean": 1761.3333333333333,
+            "tp_count_mean": 938.6666666666666,
+            "true_count_mean": 1817.0
+          }
+        }
+      }
+    }
+  },
+  {
+    "model": "posthoc_target_only_ce",
+    "runs": 3,
+    "uses_future_text": true,
+    "scores": {
+      "train": {
+        "accuracy_mean": 0.842627533193571,
+        "accuracy_std": 0.009252614864799487,
+        "macro_f1_mean": 0.6050983844538073,
+        "macro_f1_std": 0.014370904427624854,
+        "weighted_f1_mean": 0.8492195644768724,
+        "weighted_f1_std": 0.004951663011209744,
+        "per_class": {
+          "neutral": {
+            "f1_mean": 0.8878832316640741,
+            "precision_mean": 0.9132764545356652,
+            "recall_mean": 0.864309506859669,
+            "pred_count_mean": 35904.333333333336,
+            "tp_count_mean": 32780.666666666664,
+            "true_count_mean": 37927.0
+          },
+          "fearful": {
+            "f1_mean": 0.393369761112196,
+            "precision_mean": 0.2819548598461982,
+            "recall_mean": 0.6817204301075268,
+            "pred_count_mean": 388.3333333333333,
+            "tp_count_mean": 105.66666666666667,
+            "true_count_mean": 155.0
+          },
+          "dissatisfied": {
+            "f1_mean": 0.4613317706683035,
+            "precision_mean": 0.430673512170713,
+            "recall_mean": 0.5038318912237331,
+            "pred_count_mean": 4776.0,
+            "tp_count_mean": 2038.0,
+            "true_count_mean": 4045.0
+          },
+          "apologetic": {
+            "f1_mean": 0.6461420717558163,
+            "precision_mean": 0.5873144634802332,
+            "recall_mean": 0.7312775330396475,
+            "pred_count_mean": 865.3333333333334,
+            "tp_count_mean": 498.0,
+            "true_count_mean": 681.0
+          },
+          "abusive": {
+            "f1_mean": 0.58,
+            "precision_mean": 0.5642734183091236,
+            "recall_mean": 0.6176470588235294,
+            "pred_count_mean": 77.0,
+            "tp_count_mean": 42.0,
+            "true_count_mean": 68.0
+          },
+          "excited": {
+            "f1_mean": 0.37787198080459533,
+            "precision_mean": 0.2792113233879779,
+            "recall_mean": 0.5957894736842105,
+            "pred_count_mean": 1034.3333333333333,
+            "tp_count_mean": 283.0,
+            "true_count_mean": 475.0
+          },
+          "satisfied": {
+            "f1_mean": 0.8890898751716659,
+            "precision_mean": 0.8799744786178904,
+            "recall_mean": 0.8988888088895289,
+            "pred_count_mean": 14194.666666666666,
+            "tp_count_mean": 12484.666666666666,
+            "true_count_mean": 13889.0
+          }
+        }
+      },
+      "validation": {
+        "accuracy_mean": 0.8325010122823593,
+        "accuracy_std": 0.01190731713021421,
+        "macro_f1_mean": 0.49027884161949803,
+        "macro_f1_std": 0.004770550487865194,
+        "weighted_f1_mean": 0.840134407138796,
+        "weighted_f1_std": 0.007180717597806258,
+        "per_class": {
+          "neutral": {
+            "f1_mean": 0.8819750886769208,
+            "precision_mean": 0.9081627350363007,
+            "recall_mean": 0.8576938692651238,
+            "pred_count_mean": 4653.333333333333,
+            "tp_count_mean": 4225.0,
+            "true_count_mean": 4926.0
+          },
+          "fearful": {
+            "f1_mean": 0.18796992481203004,
+            "precision_mean": 0.14025074594180287,
+            "recall_mean": 0.3125,
+            "pred_count_mean": 39.0,
+            "tp_count_mean": 5.0,
+            "true_count_mean": 16.0
+          },
+          "dissatisfied": {
+            "f1_mean": 0.4484831125432629,
+            "precision_mean": 0.4080567872769724,
+            "recall_mean": 0.5060670949321913,
+            "pred_count_mean": 585.3333333333334,
+            "tp_count_mean": 236.33333333333334,
+            "true_count_mean": 467.0
+          },
+          "apologetic": {
+            "f1_mean": 0.5609156035000691,
+            "precision_mean": 0.5068972525751745,
+            "recall_mean": 0.6428571428571429,
+            "pred_count_mean": 110.0,
+            "tp_count_mean": 54.0,
+            "true_count_mean": 84.0
+          },
+          "abusive": {
+            "f1_mean": 0.18323191345503717,
+            "precision_mean": 0.22222222222222224,
+            "recall_mean": 0.15789473684210525,
+            "pred_count_mean": 13.333333333333334,
+            "tp_count_mean": 3.0,
+            "true_count_mean": 19.0
+          },
+          "excited": {
+            "f1_mean": 0.29371636789647676,
+            "precision_mean": 0.2249712089521224,
+            "recall_mean": 0.4298245614035088,
+            "pred_count_mean": 147.33333333333334,
+            "tp_count_mean": 32.666666666666664,
+            "true_count_mean": 76.0
+          },
+          "satisfied": {
+            "f1_mean": 0.8756598804526893,
+            "precision_mean": 0.8666482554623332,
+            "recall_mean": 0.8852278967600219,
+            "pred_count_mean": 1860.6666666666667,
+            "tp_count_mean": 1612.0,
+            "true_count_mean": 1821.0
+          }
+        }
+      },
+      "test": {
+        "accuracy_mean": 0.8319175294221749,
+        "accuracy_std": 0.007224226383123382,
+        "macro_f1_mean": 0.5308172013107613,
+        "macro_f1_std": 0.01013958398327784,
+        "weighted_f1_mean": 0.8376812176776588,
+        "weighted_f1_std": 0.002418846306388121,
+        "per_class": {
+          "neutral": {
+            "f1_mean": 0.8813676413753169,
+            "precision_mean": 0.9005754987503436,
+            "recall_mean": 0.8634343434343434,
+            "pred_count_mean": 4747.666666666667,
+            "tp_count_mean": 4274.0,
+            "true_count_mean": 4950.0
+          },
+          "fearful": {
+            "f1_mean": 0.1661036649595002,
+            "precision_mean": 0.12291679901742796,
+            "recall_mean": 0.2916666666666667,
+            "pred_count_mean": 43.0,
+            "tp_count_mean": 4.666666666666667,
+            "true_count_mean": 16.0
+          },
+          "dissatisfied": {
+            "f1_mean": 0.46674090078983327,
+            "precision_mean": 0.4712138494469729,
+            "recall_mean": 0.46964679911699775,
+            "pred_count_mean": 605.3333333333334,
+            "tp_count_mean": 283.6666666666667,
+            "true_count_mean": 604.0
+          },
+          "apologetic": {
+            "f1_mean": 0.5468227447077414,
+            "precision_mean": 0.45606849085109963,
+            "recall_mean": 0.6986301369863014,
+            "pred_count_mean": 115.0,
+            "tp_count_mean": 51.0,
+            "true_count_mean": 73.0
+          },
+          "abusive": {
+            "f1_mean": 0.5013262599469496,
+            "precision_mean": 0.6481481481481483,
+            "recall_mean": 0.411764705882353,
+            "pred_count_mean": 11.0,
+            "tp_count_mean": 7.0,
+            "true_count_mean": 17.0
+          },
+          "excited": {
+            "f1_mean": 0.27292213749546623,
+            "precision_mean": 0.19067385159298453,
+            "recall_mean": 0.49122807017543857,
+            "pred_count_mean": 150.66666666666666,
+            "tp_count_mean": 28.0,
+            "true_count_mean": 57.0
+          },
+          "satisfied": {
+            "f1_mean": 0.8804370599005212,
+            "precision_mean": 0.870378652095534,
+            "recall_mean": 0.8912126215373326,
+            "pred_count_mean": 1861.3333333333333,
+            "tp_count_mean": 1619.3333333333333,
+            "true_count_mean": 1817.0
+          }
+        }
+      }
+    }
+  },
+  {
+    "model": "posthoc_target_only_focal",
+    "runs": 3,
+    "uses_future_text": true,
+    "scores": {
+      "train": {
+        "accuracy_mean": 0.8255939902166318,
+        "accuracy_std": 0.010196236720923674,
+        "macro_f1_mean": 0.5623527419910676,
+        "macro_f1_std": 0.040042924094218016,
+        "weighted_f1_mean": 0.8354759299558608,
+        "weighted_f1_std": 0.00288160920733817,
+        "per_class": {
+          "neutral": {
+            "f1_mean": 0.8736756404488738,
+            "precision_mean": 0.9114487702427562,
+            "recall_mean": 0.8395953630219456,
+            "pred_count_mean": 34954.0,
+            "tp_count_mean": 31843.333333333332,
+            "true_count_mean": 37927.0
+          },
+          "fearful": {
+            "f1_mean": 0.40457891343445657,
+            "precision_mean": 0.33814400391228844,
+            "recall_mean": 0.5053763440860215,
+            "pred_count_mean": 234.66666666666666,
+            "tp_count_mean": 78.33333333333333,
+            "true_count_mean": 155.0
+          },
+          "dissatisfied": {
+            "f1_mean": 0.4429626468491618,
+            "precision_mean": 0.3873385999448498,
+            "recall_mean": 0.53852492789452,
+            "pred_count_mean": 5702.0,
+            "tp_count_mean": 2178.3333333333335,
+            "true_count_mean": 4045.0
+          },
+          "apologetic": {
+            "f1_mean": 0.6018782080437238,
+            "precision_mean": 0.5931987373064099,
+            "recall_mean": 0.6333822809593735,
+            "pred_count_mean": 753.6666666666666,
+            "tp_count_mean": 431.3333333333333,
+            "true_count_mean": 681.0
+          },
+          "abusive": {
+            "f1_mean": 0.4010402975805591,
+            "precision_mean": 0.36911266359805445,
+            "recall_mean": 0.5490196078431373,
+            "pred_count_mean": 102.66666666666667,
+            "tp_count_mean": 37.333333333333336,
+            "true_count_mean": 68.0
+          },
+          "excited": {
+            "f1_mean": 0.33122089098253554,
+            "precision_mean": 0.2340029790984958,
+            "recall_mean": 0.5894736842105264,
+            "pred_count_mean": 1216.3333333333333,
+            "tp_count_mean": 280.0,
+            "true_count_mean": 475.0
+          },
+          "satisfied": {
+            "f1_mean": 0.881112596598162,
+            "precision_mean": 0.8693368769284593,
+            "recall_mean": 0.8933928528571772,
+            "pred_count_mean": 14276.666666666666,
+            "tp_count_mean": 12408.333333333334,
+            "true_count_mean": 13889.0
+          }
+        }
+      },
+      "validation": {
+        "accuracy_mean": 0.8201286723354478,
+        "accuracy_std": 0.013594153229484414,
+        "macro_f1_mean": 0.4701841774140037,
+        "macro_f1_std": 0.007373995240786694,
+        "weighted_f1_mean": 0.8309743215420138,
+        "weighted_f1_std": 0.006696514368797586,
+        "per_class": {
+          "neutral": {
+            "f1_mean": 0.8722559944240494,
+            "precision_mean": 0.9083932781309638,
+            "recall_mean": 0.8394234673162809,
+            "pred_count_mean": 4553.333333333333,
+            "tp_count_mean": 4135.0,
+            "true_count_mean": 4926.0
+          },
+          "fearful": {
+            "f1_mean": 0.1381675433083022,
+            "precision_mean": 0.11848645181978516,
+            "recall_mean": 0.16666666666666666,
+            "pred_count_mean": 23.333333333333332,
+            "tp_count_mean": 2.6666666666666665,
+            "true_count_mean": 16.0
+          },
+          "dissatisfied": {
+            "f1_mean": 0.4469521747614998,
+            "precision_mean": 0.3834714873603762,
+            "recall_mean": 0.5510349750178444,
+            "pred_count_mean": 680.6666666666666,
+            "tp_count_mean": 257.3333333333333,
+            "true_count_mean": 467.0
+          },
+          "apologetic": {
+            "f1_mean": 0.5498061531420505,
+            "precision_mean": 0.5234295267042341,
+            "recall_mean": 0.6031746031746031,
+            "pred_count_mean": 100.0,
+            "tp_count_mean": 50.666666666666664,
+            "true_count_mean": 84.0
+          },
+          "abusive": {
+            "f1_mean": 0.16666666666666666,
+            "precision_mean": 0.22528735632183908,
+            "recall_mean": 0.17543859649122806,
+            "pred_count_mean": 21.0,
+            "tp_count_mean": 3.3333333333333335,
+            "true_count_mean": 19.0
+          },
+          "excited": {
+            "f1_mean": 0.24939343394760285,
+            "precision_mean": 0.18326718819191481,
+            "recall_mean": 0.4078947368421053,
+            "pred_count_mean": 173.66666666666666,
+            "tp_count_mean": 31.0,
+            "true_count_mean": 76.0
+          },
+          "satisfied": {
+            "f1_mean": 0.8680472756478542,
+            "precision_mean": 0.8597361554105132,
+            "recall_mean": 0.8766245652571847,
+            "pred_count_mean": 1857.0,
+            "tp_count_mean": 1596.3333333333333,
+            "true_count_mean": 1821.0
+          }
+        }
+      },
+      "test": {
+        "accuracy_mean": 0.819794708432882,
+        "accuracy_std": 0.009427060034396535,
+        "macro_f1_mean": 0.5225001332410439,
+        "macro_f1_std": 0.01714740129526305,
+        "weighted_f1_mean": 0.8282445882030581,
+        "weighted_f1_std": 0.0021746199992746106,
+        "per_class": {
+          "neutral": {
+            "f1_mean": 0.8703640743832542,
+            "precision_mean": 0.9002991120276094,
+            "recall_mean": 0.842962962962963,
+            "pred_count_mean": 4636.666666666667,
+            "tp_count_mean": 4172.666666666667,
+            "true_count_mean": 4950.0
+          },
+          "fearful": {
+            "f1_mean": 0.19614614614614614,
+            "precision_mean": 0.1718253968253968,
+            "recall_mean": 0.22916666666666666,
+            "pred_count_mean": 21.666666666666668,
+            "tp_count_mean": 3.6666666666666665,
+            "true_count_mean": 16.0
+          },
+          "dissatisfied": {
+            "f1_mean": 0.4636732875447078,
+            "precision_mean": 0.43298261338775673,
+            "recall_mean": 0.5154525386313465,
+            "pred_count_mean": 727.3333333333334,
+            "tp_count_mean": 311.3333333333333,
+            "true_count_mean": 604.0
+          },
+          "apologetic": {
+            "f1_mean": 0.535029026556158,
+            "precision_mean": 0.48535419382877015,
+            "recall_mean": 0.6210045662100456,
+            "pred_count_mean": 97.66666666666667,
+            "tp_count_mean": 45.333333333333336,
+            "true_count_mean": 73.0
+          },
+          "abusive": {
+            "f1_mean": 0.4412698412698413,
+            "precision_mean": 0.535968660968661,
+            "recall_mean": 0.39215686274509803,
+            "pred_count_mean": 13.0,
+            "tp_count_mean": 6.666666666666667,
+            "true_count_mean": 17.0
+          },
+          "excited": {
+            "f1_mean": 0.2781044708029197,
+            "precision_mean": 0.188413755099013,
+            "recall_mean": 0.5614035087719299,
+            "pred_count_mean": 178.0,
+            "tp_count_mean": 32.0,
+            "true_count_mean": 57.0
+          },
+          "satisfied": {
+            "f1_mean": 0.87291408598428,
+            "precision_mean": 0.8630417743334206,
+            "recall_mean": 0.8831407081269492,
+            "pred_count_mean": 1859.6666666666667,
+            "tp_count_mean": 1604.6666666666667,
+            "true_count_mean": 1817.0
+          }
+        }
+      }
+    }
+  },
+  {
+    "model": "posthoc_history_target_ce",
+    "runs": 3,
+    "uses_future_text": true,
+    "scores": {
+      "train": {
+        "accuracy_mean": 0.8407174470067552,
+        "accuracy_std": 0.012985338755593828,
+        "macro_f1_mean": 0.6045435486258551,
+        "macro_f1_std": 0.02726271748482686,
+        "weighted_f1_mean": 0.8520275489363544,
+        "weighted_f1_std": 0.011376469468933793,
+        "per_class": {
+          "neutral": {
+            "f1_mean": 0.8847134503110761,
+            "precision_mean": 0.9312412757985683,
+            "recall_mean": 0.8433042423603236,
+            "pred_count_mean": 34361.0,
+            "tp_count_mean": 31984.0,
+            "true_count_mean": 37927.0
+          },
+          "fearful": {
+            "f1_mean": 0.4516569321780208,
+            "precision_mean": 0.3458547643195209,
+            "recall_mean": 0.7075268817204301,
+            "pred_count_mean": 338.6666666666667,
+            "tp_count_mean": 109.66666666666667,
+            "true_count_mean": 155.0
+          },
+          "dissatisfied": {
+            "f1_mean": 0.5565460379607902,
+            "precision_mean": 0.476342153050404,
+            "recall_mean": 0.6707045735475896,
+            "pred_count_mean": 5704.333333333333,
+            "tp_count_mean": 2713.0,
+            "true_count_mean": 4045.0
+          },
+          "apologetic": {
+            "f1_mean": 0.6525282678359948,
+            "precision_mean": 0.59749803889782,
+            "recall_mean": 0.7351933431228584,
+            "pred_count_mean": 856.3333333333334,
+            "tp_count_mean": 500.6666666666667,
+            "true_count_mean": 681.0
+          },
+          "abusive": {
+            "f1_mean": 0.4557100882689195,
+            "precision_mean": 0.33539647611467455,
+            "recall_mean": 0.8382352941176471,
+            "pred_count_mean": 221.33333333333334,
+            "tp_count_mean": 57.0,
+            "true_count_mean": 68.0
+          },
+          "excited": {
+            "f1_mean": 0.34840945651936206,
+            "precision_mean": 0.2393293557377051,
+            "recall_mean": 0.6856140350877192,
+            "pred_count_mean": 1456.3333333333333,
+            "tp_count_mean": 325.6666666666667,
+            "true_count_mean": 475.0
+          },
+          "satisfied": {
+            "f1_mean": 0.8822406073068229,
+            "precision_mean": 0.8722525218591985,
+            "recall_mean": 0.8951448388412894,
+            "pred_count_mean": 14302.0,
+            "tp_count_mean": 12432.666666666666,
+            "true_count_mean": 13889.0
+          }
+        }
+      },
+      "validation": {
+        "accuracy_mean": 0.8281819408827102,
+        "accuracy_std": 0.012576949170544359,
+        "macro_f1_mean": 0.4735537476755641,
+        "macro_f1_std": 0.00642979638792595,
+        "weighted_f1_mean": 0.8406877151123351,
+        "weighted_f1_std": 0.010773298574934123,
+        "per_class": {
+          "neutral": {
+            "f1_mean": 0.8787644737628844,
+            "precision_mean": 0.9215312502719025,
+            "recall_mean": 0.8404384896467723,
+            "pred_count_mean": 4494.333333333333,
+            "tp_count_mean": 4140.0,
+            "true_count_mean": 4926.0
+          },
+          "fearful": {
+            "f1_mean": 0.11960804053827308,
+            "precision_mean": 0.0931124106562703,
+            "recall_mean": 0.1875,
+            "pred_count_mean": 32.0,
+            "tp_count_mean": 3.0,
+            "true_count_mean": 16.0
+          },
+          "dissatisfied": {
+            "f1_mean": 0.5372066761630269,
+            "precision_mean": 0.46407034302406364,
+            "recall_mean": 0.6388294075660242,
+            "pred_count_mean": 643.6666666666666,
+            "tp_count_mean": 298.3333333333333,
+            "true_count_mean": 467.0
+          },
+          "apologetic": {
+            "f1_mean": 0.5039544983482402,
+            "precision_mean": 0.43206914344685243,
+            "recall_mean": 0.626984126984127,
+            "pred_count_mean": 124.33333333333333,
+            "tp_count_mean": 52.666666666666664,
+            "true_count_mean": 84.0
+          },
+          "abusive": {
+            "f1_mean": 0.1500862564692352,
+            "precision_mean": 0.12296296296296295,
+            "recall_mean": 0.2631578947368421,
+            "pred_count_mean": 36.333333333333336,
+            "tp_count_mean": 5.0,
+            "true_count_mean": 19.0
+          },
+          "excited": {
+            "f1_mean": 0.2562769518063636,
+            "precision_mean": 0.17824767857398602,
+            "recall_mean": 0.4868421052631579,
+            "pred_count_mean": 216.0,
+            "tp_count_mean": 37.0,
+            "true_count_mean": 76.0
+          },
+          "satisfied": {
+            "f1_mean": 0.8689793366409254,
+            "precision_mean": 0.8622813042277486,
+            "recall_mean": 0.8786381109280615,
+            "pred_count_mean": 1862.3333333333333,
+            "tp_count_mean": 1600.0,
+            "true_count_mean": 1821.0
+          }
+        }
+      },
+      "test": {
+        "accuracy_mean": 0.8343066985222546,
+        "accuracy_std": 0.011193874548194654,
+        "macro_f1_mean": 0.5188239280321868,
+        "macro_f1_std": 0.012158272645499658,
+        "weighted_f1_mean": 0.8457385834528178,
+        "weighted_f1_std": 0.009405577220882904,
+        "per_class": {
+          "neutral": {
+            "f1_mean": 0.8829549703174805,
+            "precision_mean": 0.9214898295552801,
+            "recall_mean": 0.8482154882154882,
+            "pred_count_mean": 4558.666666666667,
+            "tp_count_mean": 4198.666666666667,
+            "true_count_mean": 4950.0
+          },
+          "fearful": {
+            "f1_mean": 0.13314806412583183,
+            "precision_mean": 0.11630730380730381,
+            "recall_mean": 0.1875,
+            "pred_count_mean": 27.666666666666668,
+            "tp_count_mean": 3.0,
+            "true_count_mean": 16.0
+          },
+          "dissatisfied": {
+            "f1_mean": 0.5915061625758278,
+            "precision_mean": 0.546236297198181,
+            "recall_mean": 0.6462472406181016,
+            "pred_count_mean": 715.0,
+            "tp_count_mean": 390.3333333333333,
+            "true_count_mean": 604.0
+          },
+          "apologetic": {
+            "f1_mean": 0.5543583233516586,
+            "precision_mean": 0.46835016556270626,
+            "recall_mean": 0.7031963470319634,
+            "pred_count_mean": 113.0,
+            "tp_count_mean": 51.333333333333336,
+            "true_count_mean": 73.0
+          },
+          "abusive": {
+            "f1_mean": 0.3837535014005602,
+            "precision_mean": 0.34313725490196073,
+            "recall_mean": 0.4901960784313726,
+            "pred_count_mean": 29.0,
+            "tp_count_mean": 8.333333333333334,
+            "true_count_mean": 17.0
+          },
+          "excited": {
+            "f1_mean": 0.2150972260063169,
+            "precision_mean": 0.13882350401958246,
+            "recall_mean": 0.5146198830409356,
+            "pred_count_mean": 221.66666666666666,
+            "tp_count_mean": 29.333333333333332,
+            "true_count_mean": 57.0
+          },
+          "satisfied": {
+            "f1_mean": 0.8709492484476314,
+            "precision_mean": 0.8616995322255239,
+            "recall_mean": 0.8831407081269491,
+            "pred_count_mean": 1869.0,
+            "tp_count_mean": 1604.6666666666667,
+            "true_count_mean": 1817.0
+          }
+        }
+      }
+    }
+  },
+  {
+    "model": "posthoc_history_target_focal",
+    "runs": 3,
+    "uses_future_text": true,
+    "scores": {
+      "train": {
+        "accuracy_mean": 0.8376310272536687,
+        "accuracy_std": 0.007721102029191974,
+        "macro_f1_mean": 0.583950660906743,
+        "macro_f1_std": 0.011481725841005116,
+        "weighted_f1_mean": 0.8468868361969331,
+        "weighted_f1_std": 0.005301268075010514,
+        "per_class": {
+          "neutral": {
+            "f1_mean": 0.8833631204075071,
+            "precision_mean": 0.9163844647873538,
+            "recall_mean": 0.8534992661340647,
+            "pred_count_mean": 35350.333333333336,
+            "tp_count_mean": 32370.666666666668,
+            "true_count_mean": 37927.0
+          },
+          "fearful": {
+            "f1_mean": 0.4115352439081317,
+            "precision_mean": 0.317735880586516,
+            "recall_mean": 0.6172043010752688,
+            "pred_count_mean": 313.3333333333333,
+            "tp_count_mean": 95.66666666666667,
+            "true_count_mean": 155.0
+          },
+          "dissatisfied": {
+            "f1_mean": 0.5383665848882989,
+            "precision_mean": 0.4695263540698041,
+            "recall_mean": 0.6359291306139266,
+            "pred_count_mean": 5510.666666666667,
+            "tp_count_mean": 2572.3333333333335,
+            "true_count_mean": 4045.0
+          },
+          "apologetic": {
+            "f1_mean": 0.5741083071145588,
+            "precision_mean": 0.4677657921218163,
+            "recall_mean": 0.750367107195301,
+            "pred_count_mean": 1104.6666666666667,
+            "tp_count_mean": 511.0,
+            "true_count_mean": 681.0
+          },
+          "abusive": {
+            "f1_mean": 0.45811819473642923,
+            "precision_mean": 0.3514973324383688,
+            "recall_mean": 0.6617647058823529,
+            "pred_count_mean": 129.0,
+            "tp_count_mean": 45.0,
+            "true_count_mean": 68.0
+          },
+          "excited": {
+            "f1_mean": 0.34782581619826364,
+            "precision_mean": 0.25321764487229875,
+            "recall_mean": 0.5677192982456141,
+            "pred_count_mean": 1085.3333333333333,
+            "tp_count_mean": 269.6666666666667,
+            "true_count_mean": 475.0
+          },
+          "satisfied": {
+            "f1_mean": 0.874337359094012,
+            "precision_mean": 0.8815208103651274,
+            "recall_mean": 0.8698730410156719,
+            "pred_count_mean": 13746.666666666666,
+            "tp_count_mean": 12081.666666666666,
+            "true_count_mean": 13889.0
+          }
+        }
+      },
+      "validation": {
+        "accuracy_mean": 0.8273271246681962,
+        "accuracy_std": 0.007150065703041422,
+        "macro_f1_mean": 0.46498969570993154,
+        "macro_f1_std": 0.01683070937469937,
+        "weighted_f1_mean": 0.8376740075325396,
+        "weighted_f1_std": 0.005307594876660772,
+        "per_class": {
+          "neutral": {
+            "f1_mean": 0.8790480136145563,
+            "precision_mean": 0.9078078195158289,
+            "recall_mean": 0.8529570983894978,
+            "pred_count_mean": 4632.0,
+            "tp_count_mean": 4201.666666666667,
+            "true_count_mean": 4926.0
+          },
+          "fearful": {
+            "f1_mean": 0.0845369178702512,
+            "precision_mean": 0.06595655806182121,
+            "recall_mean": 0.125,
+            "pred_count_mean": 33.0,
+            "tp_count_mean": 2.0,
+            "true_count_mean": 16.0
+          },
+          "dissatisfied": {
+            "f1_mean": 0.520449082312268,
+            "precision_mean": 0.45988787275461007,
+            "recall_mean": 0.6031406138472519,
+            "pred_count_mean": 614.6666666666666,
+            "tp_count_mean": 281.6666666666667,
+            "true_count_mean": 467.0
+          },
+          "apologetic": {
+            "f1_mean": 0.45504916951047153,
+            "precision_mean": 0.3546386323124291,
+            "recall_mean": 0.6468253968253967,
+            "pred_count_mean": 155.66666666666666,
+            "tp_count_mean": 54.333333333333336,
+            "true_count_mean": 84.0
+          },
+          "abusive": {
+            "f1_mean": 0.20916265102311615,
+            "precision_mean": 0.18454661558109833,
+            "recall_mean": 0.24561403508771928,
+            "pred_count_mean": 23.666666666666668,
+            "tp_count_mean": 4.666666666666667,
+            "true_count_mean": 19.0
+          },
+          "excited": {
+            "f1_mean": 0.24397267214277865,
+            "precision_mean": 0.18051513703687616,
+            "recall_mean": 0.3859649122807018,
+            "pred_count_mean": 163.66666666666666,
+            "tp_count_mean": 29.333333333333332,
+            "true_count_mean": 76.0
+          },
+          "satisfied": {
+            "f1_mean": 0.862709363496078,
+            "precision_mean": 0.8740140012440755,
+            "recall_mean": 0.8544755628775399,
+            "pred_count_mean": 1786.3333333333333,
+            "tp_count_mean": 1556.0,
+            "true_count_mean": 1821.0
+          }
+        }
+      },
+      "test": {
+        "accuracy_mean": 0.8350588443500575,
+        "accuracy_std": 0.008310667016073012,
+        "macro_f1_mean": 0.5199902775615116,
+        "macro_f1_std": 0.005485598126362971,
+        "weighted_f1_mean": 0.8431280067130316,
+        "weighted_f1_std": 0.006335852891239328,
+        "per_class": {
+          "neutral": {
+            "f1_mean": 0.8837656407517421,
+            "precision_mean": 0.9060997310303526,
+            "recall_mean": 0.8632996632996632,
+            "pred_count_mean": 4719.0,
+            "tp_count_mean": 4273.333333333333,
+            "true_count_mean": 4950.0
+          },
+          "fearful": {
+            "f1_mean": 0.10714714714714717,
+            "precision_mean": 0.0858366335039763,
+            "recall_mean": 0.14583333333333334,
+            "pred_count_mean": 28.0,
+            "tp_count_mean": 2.3333333333333335,
+            "true_count_mean": 16.0
+          },
+          "dissatisfied": {
+            "f1_mean": 0.5650283911878697,
+            "precision_mean": 0.5416515434453849,
+            "recall_mean": 0.5954746136865342,
+            "pred_count_mean": 669.3333333333334,
+            "tp_count_mean": 359.6666666666667,
+            "true_count_mean": 604.0
+          },
+          "apologetic": {
+            "f1_mean": 0.4733372809393623,
+            "precision_mean": 0.35347448022607253,
+            "recall_mean": 0.7214611872146118,
+            "pred_count_mean": 150.66666666666666,
+            "tp_count_mean": 52.666666666666664,
+            "true_count_mean": 73.0
+          },
+          "abusive": {
+            "f1_mean": 0.47297297297297297,
+            "precision_mean": 0.4282608695652174,
+            "recall_mean": 0.5294117647058824,
+            "pred_count_mean": 21.0,
+            "tp_count_mean": 9.0,
+            "true_count_mean": 17.0
+          },
+          "excited": {
+            "f1_mean": 0.2700367445293172,
+            "precision_mean": 0.1877303693535677,
+            "recall_mean": 0.49122807017543857,
+            "pred_count_mean": 152.0,
+            "tp_count_mean": 28.0,
+            "true_count_mean": 57.0
+          },
+          "satisfied": {
+            "f1_mean": 0.8676437654021703,
+            "precision_mean": 0.8763400260748676,
+            "recall_mean": 0.862043661713447,
+            "pred_count_mean": 1794.0,
+            "tp_count_mean": 1566.3333333333333,
+            "true_count_mean": 1817.0
+          }
+        }
+      }
+    }
+  },
+  {
+    "model": "control_history_duplicate_ce",
+    "runs": 3,
+    "uses_future_text": false,
+    "scores": {
+      "train": {
+        "accuracy_mean": 0.6799965059399021,
+        "accuracy_std": 0.005079893560836228,
+        "macro_f1_mean": 0.3171429446780281,
+        "macro_f1_std": 0.011346233110417148,
+        "weighted_f1_mean": 0.6805908311414242,
+        "weighted_f1_std": 0.003197546531250237,
+        "per_class": {
+          "neutral": {
+            "f1_mean": 0.7657173669221254,
+            "precision_mean": 0.7842771791687843,
+            "recall_mean": 0.7481829127886027,
+            "pred_count_mean": 36185.0,
+            "tp_count_mean": 28376.333333333332,
+            "true_count_mean": 37927.0
+          },
+          "fearful": {
+            "f1_mean": 0.1173190146483915,
+            "precision_mean": 0.1446148054843707,
+            "recall_mean": 0.10752688172043012,
+            "pred_count_mean": 117.33333333333333,
+            "tp_count_mean": 16.666666666666668,
+            "true_count_mean": 155.0
+          },
+          "dissatisfied": {
+            "f1_mean": 0.5134346995383109,
+            "precision_mean": 0.42881022984495126,
+            "recall_mean": 0.6407911001236094,
+            "pred_count_mean": 6049.333333333333,
+            "tp_count_mean": 2592.0,
+            "true_count_mean": 4045.0
+          },
+          "apologetic": {
+            "f1_mean": 0.03823447034202125,
+            "precision_mean": 0.13146595625493343,
+            "recall_mean": 0.023494860499265784,
+            "pred_count_mean": 137.66666666666666,
+            "tp_count_mean": 16.0,
+            "true_count_mean": 681.0
+          },
+          "abusive": {
+            "f1_mean": 0.15044610784991663,
+            "precision_mean": 0.34252873563218394,
+            "recall_mean": 0.12254901960784313,
+            "pred_count_mean": 37.0,
+            "tp_count_mean": 8.333333333333334,
+            "true_count_mean": 68.0
+          },
+          "excited": {
+            "f1_mean": 0.07701329444338766,
+            "precision_mean": 0.09250132353914368,
+            "recall_mean": 0.06666666666666667,
+            "pred_count_mean": 347.0,
+            "tp_count_mean": 31.666666666666668,
+            "true_count_mean": 475.0
+          },
+          "satisfied": {
+            "f1_mean": 0.5578356590020439,
+            "precision_mean": 0.549021390718969,
+            "recall_mean": 0.56749946000432,
+            "pred_count_mean": 14366.666666666666,
+            "tp_count_mean": 7882.0,
+            "true_count_mean": 13889.0
+          }
+        }
+      },
+      "validation": {
+        "accuracy_mean": 0.6766545192783552,
+        "accuracy_std": 0.00616941907281126,
+        "macro_f1_mean": 0.27789349472213426,
+        "macro_f1_std": 0.00012257125938161352,
+        "weighted_f1_mean": 0.67633405943642,
+        "weighted_f1_std": 0.004285650777013764,
+        "per_class": {
+          "neutral": {
+            "f1_mean": 0.7644998902029693,
+            "precision_mean": 0.7819494382066586,
+            "recall_mean": 0.7479361212613345,
+            "pred_count_mean": 4712.0,
+            "tp_count_mean": 3684.3333333333335,
+            "true_count_mean": 4926.0
+          },
+          "fearful": {
+            "f1_mean": 0.0,
+            "precision_mean": 0.0,
+            "recall_mean": 0.0,
+            "pred_count_mean": 4.333333333333333,
+            "tp_count_mean": 0.0,
+            "true_count_mean": 16.0
+          },
+          "dissatisfied": {
+            "f1_mean": 0.5114092293613861,
+            "precision_mean": 0.4251468153549935,
+            "recall_mean": 0.643112062812277,
+            "pred_count_mean": 707.6666666666666,
+            "tp_count_mean": 300.3333333333333,
+            "true_count_mean": 467.0
+          },
+          "apologetic": {
+            "f1_mean": 0.05682684973302823,
+            "precision_mean": 0.19166666666666665,
+            "recall_mean": 0.03571428571428571,
+            "pred_count_mean": 22.666666666666668,
+            "tp_count_mean": 3.0,
+            "true_count_mean": 84.0
+          },
+          "abusive": {
+            "f1_mean": 0.0,
+            "precision_mean": 0.0,
+            "recall_mean": 0.0,
+            "pred_count_mean": 3.6666666666666665,
+            "tp_count_mean": 0.0,
+            "true_count_mean": 19.0
+          },
+          "excited": {
+            "f1_mean": 0.0653095446402533,
+            "precision_mean": 0.08725490196078432,
+            "recall_mean": 0.05263157894736842,
+            "pred_count_mean": 45.666666666666664,
+            "tp_count_mean": 4.0,
+            "true_count_mean": 76.0
+          },
+          "satisfied": {
+            "f1_mean": 0.5472089491173029,
+            "precision_mean": 0.534405232944613,
+            "recall_mean": 0.561047043748856,
+            "pred_count_mean": 1913.0,
+            "tp_count_mean": 1021.6666666666666,
+            "true_count_mean": 1821.0
+          }
+        }
+      },
+      "test": {
+        "accuracy_mean": 0.6840987523228033,
+        "accuracy_std": 0.004049945925774479,
+        "macro_f1_mean": 0.2738455139265269,
+        "macro_f1_std": 0.0023864633976658535,
+        "weighted_f1_mean": 0.6821675077334958,
+        "weighted_f1_std": 0.002935136391486391,
+        "per_class": {
+          "neutral": {
+            "f1_mean": 0.7721506352220503,
+            "precision_mean": 0.7808705190992852,
+            "recall_mean": 0.7637037037037038,
+            "pred_count_mean": 4841.333333333333,
+            "tp_count_mean": 3780.3333333333335,
+            "true_count_mean": 4950.0
+          },
+          "fearful": {
+            "f1_mean": 0.0,
+            "precision_mean": 0.0,
+            "recall_mean": 0.0,
+            "pred_count_mean": 7.666666666666667,
+            "tp_count_mean": 0.0,
+            "true_count_mean": 16.0
+          },
+          "dissatisfied": {
+            "f1_mean": 0.5604775690016166,
+            "precision_mean": 0.5130645231830816,
+            "recall_mean": 0.6192052980132451,
+            "pred_count_mean": 730.3333333333334,
+            "tp_count_mean": 374.0,
+            "true_count_mean": 604.0
+          },
+          "apologetic": {
+            "f1_mean": 0.0,
+            "precision_mean": 0.0,
+            "recall_mean": 0.0,
+            "pred_count_mean": 13.333333333333334,
+            "tp_count_mean": 0.0,
+            "true_count_mean": 73.0
+          },
+          "abusive": {
+            "f1_mean": 0.0,
+            "precision_mean": 0.0,
+            "recall_mean": 0.0,
+            "pred_count_mean": 3.0,
+            "tp_count_mean": 0.0,
+            "true_count_mean": 17.0
+          },
+          "excited": {
+            "f1_mean": 0.047090759840375813,
+            "precision_mean": 0.055980657845794146,
+            "recall_mean": 0.04093567251461988,
+            "pred_count_mean": 42.666666666666664,
+            "tp_count_mean": 2.3333333333333335,
+            "true_count_mean": 57.0
+          },
+          "satisfied": {
+            "f1_mean": 0.5371996334216457,
+            "precision_mean": 0.5262447847848802,
+            "recall_mean": 0.5488901119060722,
+            "pred_count_mean": 1895.6666666666667,
+            "tp_count_mean": 997.3333333333334,
+            "true_count_mean": 1817.0
+          }
+        }
+      }
+    }
+  },
+  {
+    "model": "control_history_duplicate_focal",
+    "runs": 3,
+    "uses_future_text": false,
+    "scores": {
+      "train": {
+        "accuracy_mean": 0.680846727230375,
+        "accuracy_std": 0.009778692811455072,
+        "macro_f1_mean": 0.3229178354358894,
+        "macro_f1_std": 0.01348789617610392,
+        "weighted_f1_mean": 0.6800036364835398,
+        "weighted_f1_std": 0.006356012427059409,
+        "per_class": {
+          "neutral": {
+            "f1_mean": 0.7705284493669969,
+            "precision_mean": 0.7713027306703061,
+            "recall_mean": 0.7699879593253707,
+            "pred_count_mean": 37866.333333333336,
+            "tp_count_mean": 29203.333333333332,
+            "true_count_mean": 37927.0
+          },
+          "fearful": {
+            "f1_mean": 0.1295961422543701,
+            "precision_mean": 0.09566256945344359,
+            "recall_mean": 0.2064516129032258,
+            "pred_count_mean": 329.0,
+            "tp_count_mean": 32.0,
+            "true_count_mean": 155.0
+          },
+          "dissatisfied": {
+            "f1_mean": 0.49150108741582194,
+            "precision_mean": 0.4657313570997165,
+            "recall_mean": 0.5222908941079522,
+            "pred_count_mean": 4551.333333333333,
+            "tp_count_mean": 2112.6666666666665,
+            "true_count_mean": 4045.0
+          },
+          "apologetic": {
+            "f1_mean": 0.049707186056459275,
+            "precision_mean": 0.08448624272722781,
+            "recall_mean": 0.0381791483113069,
+            "pred_count_mean": 328.3333333333333,
+            "tp_count_mean": 26.0,
+            "true_count_mean": 681.0
+          },
+          "abusive": {
+            "f1_mean": 0.19488031081589172,
+            "precision_mean": 0.378318064364576,
+            "recall_mean": 0.18627450980392157,
+            "pred_count_mean": 72.0,
+            "tp_count_mean": 12.666666666666666,
+            "true_count_mean": 68.0
+          },
+          "excited": {
+            "f1_mean": 0.0764434185691444,
+            "precision_mean": 0.08737520128824477,
+            "recall_mean": 0.07438596491228071,
+            "pred_count_mean": 430.0,
+            "tp_count_mean": 35.333333333333336,
+            "true_count_mean": 475.0
+          },
+          "satisfied": {
+            "f1_mean": 0.5477682535725412,
+            "precision_mean": 0.5534039413146767,
+            "recall_mean": 0.5435716514267885,
+            "pred_count_mean": 13663.0,
+            "tp_count_mean": 7549.666666666667,
+            "true_count_mean": 13889.0
+          }
+        }
+      },
+      "validation": {
+        "accuracy_mean": 0.6761596256804786,
+        "accuracy_std": 0.013006562720040868,
+        "macro_f1_mean": 0.28428795592150125,
+        "macro_f1_std": 0.0043060075207648945,
+        "weighted_f1_mean": 0.674888498153721,
+        "weighted_f1_std": 0.008740690436664008,
+        "per_class": {
+          "neutral": {
+            "f1_mean": 0.7671485095979834,
+            "precision_mean": 0.7687008380095263,
+            "recall_mean": 0.7658681824333469,
+            "pred_count_mean": 4908.0,
+            "tp_count_mean": 3772.6666666666665,
+            "true_count_mean": 4926.0
+          },
+          "fearful": {
+            "f1_mean": 0.03176403857061826,
+            "precision_mean": 0.025679012345679014,
+            "recall_mean": 0.041666666666666664,
+            "pred_count_mean": 21.333333333333332,
+            "tp_count_mean": 0.6666666666666666,
+            "true_count_mean": 16.0
+          },
+          "dissatisfied": {
+            "f1_mean": 0.49426015513421984,
+            "precision_mean": 0.4621179626786092,
+            "recall_mean": 0.5324768022840828,
+            "pred_count_mean": 539.0,
+            "tp_count_mean": 248.66666666666666,
+            "true_count_mean": 467.0
+          },
+          "apologetic": {
+            "f1_mean": 0.06933834600993978,
+            "precision_mean": 0.11053526546484294,
+            "recall_mean": 0.05555555555555555,
+            "pred_count_mean": 52.0,
+            "tp_count_mean": 4.666666666666667,
+            "true_count_mean": 84.0
+          },
+          "abusive": {
+            "f1_mean": 0.013888888888888888,
+            "precision_mean": 0.011494252873563218,
+            "recall_mean": 0.017543859649122806,
+            "pred_count_mean": 10.666666666666666,
+            "tp_count_mean": 0.3333333333333333,
+            "true_count_mean": 19.0
+          },
+          "excited": {
+            "f1_mean": 0.07652434907934284,
+            "precision_mean": 0.10068373960345843,
+            "recall_mean": 0.07017543859649122,
+            "pred_count_mean": 60.666666666666664,
+            "tp_count_mean": 5.333333333333333,
+            "true_count_mean": 76.0
+          },
+          "satisfied": {
+            "f1_mean": 0.5370914041695155,
+            "precision_mean": 0.5386710971753155,
+            "recall_mean": 0.5367014460918909,
+            "pred_count_mean": 1817.3333333333333,
+            "tp_count_mean": 977.3333333333334,
+            "true_count_mean": 1821.0
+          }
+        }
+      },
+      "test": {
+        "accuracy_mean": 0.6818423148393947,
+        "accuracy_std": 0.012756744460335102,
+        "macro_f1_mean": 0.27548592959328116,
+        "macro_f1_std": 0.006855084886776667,
+        "weighted_f1_mean": 0.6792070633200843,
+        "weighted_f1_std": 0.008947268399572932,
+        "per_class": {
+          "neutral": {
+            "f1_mean": 0.7735654743693451,
+            "precision_mean": 0.7659988812735978,
+            "recall_mean": 0.7814814814814813,
+            "pred_count_mean": 5050.0,
+            "tp_count_mean": 3868.3333333333335,
+            "true_count_mean": 4950.0
+          },
+          "fearful": {
+            "f1_mean": 0.0,
+            "precision_mean": 0.0,
+            "recall_mean": 0.0,
+            "pred_count_mean": 31.0,
+            "tp_count_mean": 0.0,
+            "true_count_mean": 16.0
+          },
+          "dissatisfied": {
+            "f1_mean": 0.5359148271938985,
+            "precision_mean": 0.5547970624947047,
+            "recall_mean": 0.5193156732891833,
+            "pred_count_mean": 565.6666666666666,
+            "tp_count_mean": 313.6666666666667,
+            "true_count_mean": 604.0
+          },
+          "apologetic": {
+            "f1_mean": 0.04463749209361164,
+            "precision_mean": 0.07115270350564468,
+            "recall_mean": 0.0365296803652968,
+            "pred_count_mean": 39.333333333333336,
+            "tp_count_mean": 2.6666666666666665,
+            "true_count_mean": 73.0
+          },
+          "abusive": {
+            "f1_mean": 0.0,
+            "precision_mean": 0.0,
+            "recall_mean": 0.0,
+            "pred_count_mean": 8.666666666666666,
+            "tp_count_mean": 0.0,
+            "true_count_mean": 17.0
+          },
+          "excited": {
+            "f1_mean": 0.04683391082109591,
+            "precision_mean": 0.05541310541310542,
+            "recall_mean": 0.04678362573099415,
+            "pred_count_mean": 55.333333333333336,
+            "tp_count_mean": 2.6666666666666665,
+            "true_count_mean": 57.0
+          },
+          "satisfied": {
+            "f1_mean": 0.5274498026750173,
+            "precision_mean": 0.5336660653575785,
+            "recall_mean": 0.5226563933223262,
+            "pred_count_mean": 1784.0,
+            "tp_count_mean": 949.6666666666666,
+            "true_count_mean": 1817.0
+          }
+        }
+      }
+    }
+  }
+]

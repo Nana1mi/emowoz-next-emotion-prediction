@@ -1,0 +1,52 @@
+[
+  {
+    "model": "majority",
+    "runs": 1,
+    "accuracy_mean": 0.6570215025219007,
+    "accuracy_std": 0.0,
+    "macro_f1_mean": 0.11328786561083902,
+    "macro_f1_std": 0.0,
+    "weighted_f1_mean": 0.5210279457679283,
+    "weighted_f1_std": 0.0
+  },
+  {
+    "model": "persistence_oracle",
+    "runs": 1,
+    "accuracy_mean": 0.6482612158216087,
+    "accuracy_std": 0.0,
+    "macro_f1_mean": 0.2577017734401542,
+    "macro_f1_std": 0.0,
+    "weighted_f1_mean": 0.6195265617774268,
+    "weighted_f1_std": 0.0
+  },
+  {
+    "model": "last_user_classifier",
+    "runs": 3,
+    "accuracy_mean": 0.6488806300327404,
+    "accuracy_std": 0.009010446798697584,
+    "macro_f1_mean": 0.2565406681178921,
+    "macro_f1_std": 0.0028928539976559174,
+    "weighted_f1_mean": 0.650272472327318,
+    "weighted_f1_std": 0.004737647338621111
+  },
+  {
+    "model": "history_classifier",
+    "runs": 3,
+    "accuracy_mean": 0.6916202106008318,
+    "accuracy_std": 0.0032629668290403272,
+    "macro_f1_mean": 0.27030520922700224,
+    "macro_f1_std": 0.004983916808615018,
+    "weighted_f1_mean": 0.6846817282192799,
+    "weighted_f1_std": 0.0035981383549294893
+  },
+  {
+    "model": "jepa",
+    "runs": 3,
+    "accuracy_mean": 0.6865764091673303,
+    "accuracy_std": 0.005864775183231885,
+    "macro_f1_mean": 0.2706950808011854,
+    "macro_f1_std": 0.004700246197887239,
+    "weighted_f1_mean": 0.6815810648723408,
+    "weighted_f1_std": 0.002425238954926314
+  }
+]
